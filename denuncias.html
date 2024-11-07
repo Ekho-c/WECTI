@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denúncias - Operação Voz da Verdade</title>
+    <link rel="stylesheet" href="denuncias.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <h1>Denúncia de Corrupção</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="denuncias.html">Denúncias</a>
+            <a href="comoDenunciar.html">Como Denunciar</a>
+            <a href="corrupcao.html">Sobre a Corrupção</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <!-- Seção de Denúncia -->
+    <section class="container denuncia-section">
+        <h2>Registrar uma Denúncia</h2>
+        <p>Use o formulário abaixo para denunciar um caso de corrupção de forma segura. Todos os campos são obrigatórios.</p>
+
+        <form action="/submit-denuncia" method="post" enctype="multipart/form-data" class="denuncia-form">
+            <label for="descricao">Descrição da Denúncia:</label>
+            <textarea id="descricao" name="descricao" rows="5" required placeholder="Descreva o caso de corrupção..."></textarea>
+
+            <label for="local">Local do Incidente:</label>
+            <input type="text" id="local" name="local" required placeholder="Informe o local do ocorrido">
+
+            <label for="envolvidos">Envolvidos:</label>
+            <input type="text" id="envolvidos" name="envolvidos" required placeholder="Nome das pessoas/organizações envolvidas">
+
+            <label for="documentos">Anexar Documentos e Provas (obrigatório):</label>
+            <input type="file" id="documentos" name="documentos[]" required multiple>
+
+            <button type="submit">Enviar Denúncia</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>&copy; 2024 Portal de Denúncia de Corrupção. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
