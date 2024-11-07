@@ -87,3 +87,51 @@ body {
 .register-form p a:hover {
     text-decoration: underline;
 }
+
+/* Responsividade para dispositivos com largura de tela menor que 768px */
+@media (max-width: 768px) {
+    .register-container {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .register-form h2 {
+        font-size: 20px;
+    }
+
+    .register-form input[type="text"],
+    .register-form input[type="email"],
+    .register-form input[type="password"],
+    .register-form button {
+        font-size: 15px;
+        padding: 8px;
+    }
+}
+
+/* Responsividade para dispositivos com largura de tela menor que 480px */
+@media (max-width: 480px) {
+    .register-container {
+        max-width: 95%;
+        padding: 10px;
+    }
+
+    .register-form h2 {
+        font-size: 18px;
+    }
+
+    .register-form input[type="text"],
+    .register-form input[type="email"],
+    .register-form input[type="password"] {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .register-form button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .register-form p {
+        font-size: 14px;
+    }
+}

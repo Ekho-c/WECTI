@@ -107,3 +107,90 @@ body {
     font-size: 14px;
     margin-top: 20px;
 }
+
+/* Responsividade para Dispositivos Móveis */
+@media (max-width: 768px) {
+    /* Ajuste do Cabeçalho */
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .header h1 {
+        font-size: 20px;
+    }
+    .header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Ajuste da Container Principal */
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    /* Seção Hero */
+    .hero-section h2 {
+        font-size: 24px;
+    }
+    .hero-section p {
+        font-size: 14px;
+    }
+
+    /* Cartões de Informações */
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    /* Blocos Informativos nas Páginas de Explicação */
+    .info-block {
+        padding: 15px;
+    }
+    .info-block h3 {
+        font-size: 18px;
+    }
+    .info-block p,
+    .info-block ul li {
+        font-size: 14px;
+    }
+
+    /* Botão de Redirecionamento */
+    .denuncia-button {
+        font-size: 16px;
+        padding: 12px 15px;
+    }
+
+    /* Ajuste do Rodapé */
+    .footer {
+        font-size: 14px;
+    }
+}
+
+/* Responsividade para Dispositivos Muito Pequenos (ex.: telas menores que 480px) */
+@media (max-width: 480px) {
+    /* Ajuste adicional para cabeçalho e texto */
+    .header h1 {
+        font-size: 18px;
+    }
+    .header nav a {
+        font-size: 14px;
+    }
+
+    .hero-section h2 {
+        font-size: 20px;
+    }
+    .hero-section p {
+        font-size: 13px;
+    }
+
+    /* Ajuste do Rodapé para Tela Pequena */
+    .footer {
+        font-size: 12px;
+        padding: 10px;
+    }
+}

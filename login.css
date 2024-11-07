@@ -1,3 +1,4 @@
+/* CSS Geral */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +12,6 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: #e0f7ff; /* Fundo azul claro */
-    
 }
 
 .container {
@@ -120,4 +120,68 @@ p {
 
 .form-section a:hover {
     text-decoration: underline;
+}
+
+/* Responsividade para Telas Menores */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .image-section,
+    .form-section {
+        width: 100%;
+    }
+
+    .image-section {
+        padding: 15px;
+    }
+
+    .form-section {
+        padding: 1.5rem;
+    }
+
+    .form-section h2 {
+        font-size: 20px;
+    }
+
+    form input[type="email"],
+    form input[type="password"],
+    form input[type="text"],
+    button {
+        font-size: 14px;
+    }
+
+    .remember-forgot {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .form-section h2 {
+        font-size: 18px;
+    }
+
+    form input[type="email"],
+    form input[type="password"],
+    form input[type="text"] {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    p {
+        font-size: 13px;
+    }
 }
