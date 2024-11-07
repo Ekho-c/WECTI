@@ -130,41 +130,60 @@ body {
     margin-bottom: 20px;
 }
 
-.steps {
+.info-blocks {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.step {
+.info-block {
     background-color: #fff;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.step h3 {
+.info-block h3 {
     color: #00aaff;
     font-size: 20px;
     margin-bottom: 10px;
 }
 
-.step p {
+.info-block p {
     font-size: 14px;
     color: #333;
 }
 
-.step ul {
+.info-block ul {
     margin-top: 10px;
     padding-left: 20px;
 }
 
-.step ul li {
+.info-block ul li {
     font-size: 14px;
     color: #333;
     margin-bottom: 5px;
 }
 
+.denuncia-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.denuncia-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #00aaff;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.denuncia-button:hover {
+    background-color: #0077cc;
+}
 
 /* Rodapé */
 .footer {
